@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #6c63ff;
+    --primary-dark: #5a52d5;
+    --secundary-color: #ff6b68;
+    --accent-color: #4ecdc4;
+    --success-color: #2ecc71;
+    --warning-color: #ffb900;
+    --error-color: #ff6b6b;
+    --dark-text: #2d3436;
+    --light-text: #ffffffff;
+    --border-color: #e0e0e0;
+    --light-bg: #f8f9fa;
+    --card-bg: rgba(255,255,255,0.95);
+    --animation-duration: 0.5s;
+    --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body{
+    font: 'segoe UI', Tahoma, Geneva, Verdana, sans-selif;
+    background: url('#');
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-text);
+    padding: 40px 0;
+    position: relative;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(212, 210, 253, 0.9) 0%, rgba(97, 102, 163, 0.8) 100%);
+    backdrop-filter: blur(5px);
+}
+
+@media (max-width: 767.98px){
+    .form-container {
+        margin: 20px;
+    }
+    .form-body {
+        padding: 15px 20px,25;
+    }
+    .social-buttons {
+        flex-wrap: wrap;
+    }
+}

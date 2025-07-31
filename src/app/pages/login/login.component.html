@@ -1,0 +1,59 @@
+<div class="pareDiv">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">
+                            Inicio de sesion
+                        </h2>
+                        <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+                            <div class="mb-3">
+                                <!--email-->
+                                <label for="email" class="form-label">email</label>
+                                <input type="email" class="form-control" id="email" name="email" 
+                                [(ngModel)]="credentials.email"
+                                required
+                                email
+                                #email="ngModel"
+                                placeholder="tucorreo@ejemplo.com">
+                                <div *ngIf ="email.invalid && (email.touched || email.dirty)" class="text-danger">
+                                    <small *ngIf="email.errors?.['required']">El correo es obligatorio.</small>
+                                    <small *ngIf="email.errors?.['email']">Ingrese un correo valido.</small>
+                                </div>
+
+                                <!--Password-->
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">password</label>
+                                    <input type="password"
+                                    class="form-control"
+                                    id="password"
+                                    name="password"
+                                    [(ngModel)]="credentials.password"
+                                    required
+                                    minlength="6"
+                                    #password="ngModel"
+                                    placeholder="********">
+                                    <div *ngIf="password.invalid && (password.touched || password.dirty)" class="text-danger">
+                                        <small *ngIf="password.errors?.['required']">La contraseña es obligatoria.</small>
+                                        <small *ngIf="password.errors?.['minlength']">La contraseña debe tener al menos 8 caracteres.</small>
+                                    </div>
+                                </div>
+                                <div class="d-grid gab-2">
+                                    <button type="submit"
+                                    class="btn btn-primary"
+                                    [disabled]="loginForm.invalid">
+                                    Inicia sesión
+                                </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="mt-3 text-center">
+                            <small>Registrate <a routerLink="/register"></a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
