@@ -1,1 +1,48 @@
-<p>register works!</p>
+<form (ngSubmit)="ngSubmit(registerForm)" #registerForm="ngForm">
+    <h2 class="register-title">Registrate usuario nuevo</h2>
+    <div class="mb-3">
+        <label for="fullName" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="fullName" 
+           name="fullName" [(ngModel)]="credentials.fullName"
+           required #fullName="ngModel"
+           placeholder="Juan Pérez">
+        <div *ngIf="fullName.invalid && (fullName.touched || fullName.dirty)" class="text-danger">
+            <small *ngIf="fullName.errors?.['required']">El nombre completo es obligatorio.</small>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" 
+           name="email" [(ngModel)]="credentials.email"
+           required email #email="ngModel"
+           placeholder="example@example.com">
+        <div *ngIf="email.invalid && (email.touched || email.dirty)" class="text-danger">
+            <small *ngIf="email.errors?.['required']">El correo es obligatorio.</small>
+            <small *ngIf="email.errors?.['email']">Ingrese un correo válido.</small>
+        </div>
+    </div>
+    <div class="mb-3">
+    <label for="password" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="password" 
+           name="password" [(ngModel)]="credentials.password"
+           required minlength="8" maxlength="20" #password="ngModel"
+           placeholder="********">
+    <div *ngIf="password.invalid && (password.touched || password.dirty)" class="text-danger">
+      <small *ngIf="password.errors?.['required']">La contraseña es obligatoria.</small>
+      <small *ngIf="password.errors?.['minlength']">Mínimo 8 caracteres.</small>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
+    <input type="password" class="form-control" id="confirmPassword" 
+           name="confirmPassword" [(ngModel)]="credentials.confirmPassword"
+           required minlength="8" maxlength="20" #confirmPassword="ngModel"
+           placeholder="********">
+    <div *ngIf="confirmPassword.invalid && (confirmPassword.touched || confirmPassword.dirty)" class="text-danger">
+      <small *ngIf="confirmPassword.errors?.['required']">La confirmación de contraseña es obligatoria.</small>
+      <small *ngIf="confirmPassword.errors?.['minlength']">Mínimo 8 caracteres.</small>
+      <small *ngIf="confirmPassword.errors?.['pattern']">Las contraseñas deben ser las mismas.</small>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Registrarse</button>
+</form>

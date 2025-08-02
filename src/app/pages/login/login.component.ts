@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule,
   ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
@@ -20,9 +21,16 @@ export class LoginComponent {
     email : '',
     password : ''
   };
-
+  constructor(private router: Router) {}
   //Función de envio de formulario
-  onSubmit() {
-    console.log('¡Iniciando sesión!, espere un momento', this.credentials)
+  onSubmit(loginForm: NgForm) {
+    if (loginForm.valid) {
+      console.log('¡Iniciando sesión!, espere un momento', this.credentials);
+      this.router.navigate(['/home']);
+    } else {
+      console.log('Formulario inválido');
+
+    }
   }
+  
 }
