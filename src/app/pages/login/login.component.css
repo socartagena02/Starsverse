@@ -95,6 +95,7 @@ form {
   text-decoration: underline;
 }
 
+
 @media (max-width: 576px) {
   form {
     padding: 1.5rem;

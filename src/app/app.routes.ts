@@ -9,48 +9,42 @@ import { SupportComponent } from './pages/support/support.component';
 import { ChangePasswordComponent } from './pages/change-password/change-password.component';
 
 export const routes: Routes = [
-    {
-        path:'',
-        redirectTo:'login',
-        pathMatch:'full'
-    },
-    {
-        path:'login',
-        component: LoginComponent,
-    },
-    {
-        path: '',
-        component: HomeComponent,
-        children:[
-            {
-                path:'home',
-                component: HomeComponent,
-            },
-        ]
-    },
-    {
-        path:'register',
-        component: RegisterComponent
-    },
-    {
-        path:'layout',
-        component: LayoutComponent
-    },
-    {
-        path:'shopping-cart',
-        component: ShoppingCartComponent
-    },
-    {
-        path: "product",
-        component: ProductsComponent
-    },
-    {
-        path:"support",
-        component: SupportComponent
-    },
-    {
-        path: "forgot-password",
-        component: ChangePasswordComponent
-    }
+   { 
+    path: '', 
+    redirectTo: 'home', 
+    pathMatch: 'full' 
+  },
+  { 
+    path: 'login', 
+    component: LoginComponent 
+  },
+  { 
+    path: 'home', 
+    component: HomeComponent 
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
+  {
+    path: 'layout',
+    component: LayoutComponent
+  },
+  {
+    path: 'shopping-cart',
+    component: ShoppingCartComponent
+  },
+  {
+    path: 'product',
+    component: ProductsComponent
+  },
+  {
+    path: 'support',
+    component: SupportComponent
+  },
+  {
+    path: 'forgot-password',
+    component: ChangePasswordComponent
+  }
     
 ];

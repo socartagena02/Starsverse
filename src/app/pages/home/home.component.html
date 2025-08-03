@@ -3,19 +3,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/product">productos</a>
+          <a class="nav-link active" aria-current="page" href="/product">Productos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/support">¿Tienes preguntas?</a>
+          <a class="nav-link active" aria-current="page" href="/support">¿Tienes problemas?</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/login">Iniciar sesión</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
+        </ul>
+        <button type="button" class="btn btn-primary btn-sm" ><a (click)="goToLogin()">Inicia sesión</a></button>
     </div>
   </div>
 </nav>
+<div class="img-container">
+  <img src="assets/img/Miyabi_mindscape.webp" class="img-responsive">
+</div>
+
+<div class="search-wrapper">
+  <div class="search-container">
+    <h3 class="search-title">Productos más buscados</h3>
+    <input class="form-control me-2" type="search" placeholder="Busquedas" aria-label="Search" (keyup.enter)="searchProducts()"/>
+    <h3 class="no-results">Aún no se encontraron resultados</h3>
+  </div>
+</div>
