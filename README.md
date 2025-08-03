@@ -1,59 +1,33 @@
-# PaginaCompras
+# Pagina de compras 🛒
+Sistema de e-commerce con autenticación de usuarios, validación de formularios y diseño responsive.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
+## Caracteristicas principales
+- Formularios de login y registro con validación
+- Diseño responsivo con Bootstrap
 
-## Development server
+## Vista previa - Mockup 📷
+- Página de inicio
+<img width="1347" height="636" alt="image" src="https://github.com/user-attachments/assets/df62d8b5-19e9-4523-af8d-bd84f8576e2e" />
 
-To start a local development server, run:
+- Inicio de sesión
+  <img width="1365" height="682" alt="image" src="https://github.com/user-attachments/assets/69ab4bc6-0554-4e86-a9f1-2a33d292521d" />
+  
+- Registro de usuario
+<img width="1365" height="685" alt="image" src="https://github.com/user-attachments/assets/10a01030-e54d-44df-990c-a968f62078a3" />
 
-```bash
-ng serve
-```
+## Requisitos 💻
+- node.js >= 20.19.4
+- Angular >= v17
+- Navegador web 
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Instalación 🧩
+1. Clone el repositorio
+cd pagina_compras
+2. Instala las dependencias:
+npm install
+3. Iniciar servidor con ng serve
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Tecnologias utilizadas 👩‍💻
+- Angular v20
+- Boostrap v5.3.7
+- Typescript
