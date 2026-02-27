@@ -69,29 +69,29 @@ form {
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
-  background-color: #e995db;
+  background-color: #54ABA9;
   border: 1px solid transparent;
   border-radius: 6px;
   transition: all 0.15s ease-in-out;
 }
 
 .btn-primary:hover {
-  background-color: #c47cb2;
+  background-color: #358B89;
 }
 
 .links {
   font-size: 0.875rem;
-  color: #eec1ee;
+  color: #A9A9A9;
 }
 
 .links a {
-  color: #d394be;
+  color: #A9A9A9;
   text-decoration: none;
   transition: color 0.15s ease-in-out;
 }
 
 .links a:hover {
-  color: #c080a8;
+  color: #7e7878;
   text-decoration: underline;
 }
 

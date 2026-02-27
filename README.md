@@ -1,19 +1,23 @@
-# Pagina de compras 🛒
+# Stars verse 🛒
 Sistema de e-commerce con autenticación de usuarios, validación de formularios y diseño responsive.
 
 ## Caracteristicas principales
 - Formularios de login y registro con validación
 - Diseño responsivo con Bootstrap
 
-## Vista previa - Mockup 📷
-- Página de inicio
-<img width="1347" height="636" alt="image" src="https://github.com/user-attachments/assets/df62d8b5-19e9-4523-af8d-bd84f8576e2e" />
+## Vista previa 📷
 
-- Inicio de sesión
-  <img width="1365" height="682" alt="image" src="https://github.com/user-attachments/assets/69ab4bc6-0554-4e86-a9f1-2a33d292521d" />
-  
-- Registro de usuario
-<img width="1365" height="685" alt="image" src="https://github.com/user-attachments/assets/10a01030-e54d-44df-990c-a968f62078a3" />
+### Home
+![paginaInicial](src/assets/img/home.png)
+
+### Inicio sesión
+![inicioSesion](src/assets/img/inicioSesion.png)
+
+### Registro
+![RegistroUsuario](src/assets/img/registroUsuario.png)
+
+## Mockup
+![MockUp](https://www.figma.com/proto/hY4sZBYpyMx0Vtl3FuN8WJ/Stars-verse--project?node-id=0-1&t=TaHRrRAv3oqUz6K5-1)
 
 ## Requisitos 💻
 - node.js >= 20.19.4
@@ -21,12 +25,18 @@ Sistema de e-commerce con autenticación de usuarios, validación de formularios
 - Navegador web 
 
 ## Instalación 🧩
+```bash
 1. Clone el repositorio
-cd pagina_compras
+cd Starsverse
+```
+```bash
 2. Instala las dependencias:
 npm install
-3. Iniciar servidor con ng serve
-
+```
+```bash
+3. Iniciar servidor
+ng serve
+```
 ## Tecnologias utilizadas 👩‍💻
 - Angular v20
 - Boostrap v5.3.7

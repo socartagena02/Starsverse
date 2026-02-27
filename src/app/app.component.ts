@@ -6,9 +6,9 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-root',
   imports: [RouterOutlet, FormsModule],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrl: './app.component.css'
 })
 export class AppComponent { 
-  protected readonly title = signal('paginaRetail');
+  protected readonly title = signal('Starsverse');
 }
 

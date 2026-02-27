@@ -1,1 +1,32 @@
-<p>support works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <button type="submit" class="btn btn-primary"><a href="/home">Volver al inicio</a></button>
+    <form>
+ <div class="mb-3">
+    <label for="exampleInputText" class="form-label">Nombre completo</label>
+    <input type="text" class="form-control" id="example">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+      <div class="image">
+          <h2 class="form__label">Subir Imagen</h2>
+          <form>
+              <div class="group">
+                  <input type="file" id="imageUpload" accept="image/*" onchange="previewImage(event)">
+                  <label for="imageUpload"></label>
+              </div>
+          </form>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
+
+

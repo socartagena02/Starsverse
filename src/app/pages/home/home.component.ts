@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-home',
   imports: [],
@@ -14,6 +15,6 @@ export class HomeComponent {
     this.router.navigate(['/login']);
   }
   searchProducts(){
-    this.router.navigate(['/products']);
+    this.router.navigate(['/product']);
   }
 }

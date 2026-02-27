@@ -1,25 +1,31 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">    
+  <div class="container-fluid">
+    <div class="navbar-brand">Stars verse</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/product">Productos</a>
+          <a class="nav-link" href="/product">Catalogos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/support">¿Tienes problemas?</a>
+          <a class="nav-link" href="/support">Soporte</a>
         </li>
-        </ul>
-        <button type="button" class="btn btn-primary btn-sm" ><a (click)="goToLogin()">Inicia sesión</a></button>
+      </ul>
+      <button type="button" class="btn btn-primary btn-sm" ><a (click)="goToLogin()">Inicia sesión</a></button>
     </div>
   </div>
 </nav>
-<div class="img-container">
-  <img src="assets/img/Miyabi_mindscape.webp" class="img-responsive">
-</div>
-
+  <div class="container-flex">
+    <div class="img-container">
+      <img src="assets/img/group_15.png" class="img-responsive">
+    </div>
+  </div>
+  
 <div class="search-wrapper">
   <div class="search-container">
-    <h3 class="search-title">Productos más buscados</h3>
+    <h3 class="search-title">Productos más recientes</h3>
     <input class="form-control me-2" type="search" placeholder="Busquedas" aria-label="Search" (keyup.enter)="searchProducts()"/>
     <h3 class="no-results">Aún no se encontraron resultados</h3>
   </div>

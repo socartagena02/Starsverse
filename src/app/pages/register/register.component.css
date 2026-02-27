@@ -69,14 +69,14 @@ form {
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
-  background-color: #e995db;
+  background-color: #54ABA9;
   border: 1px solid transparent;
   border-radius: 6px;
   transition: all 0.15s ease-in-out;
 }
 
 .btn-primary:hover {
-  background-color: #c47cb2;
+  background-color: #358B89;
 }
 
 .links {
