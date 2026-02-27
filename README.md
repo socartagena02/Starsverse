@@ -17,7 +17,7 @@ Sistema de e-commerce con autenticación de usuarios, validación de formularios
 ![RegistroUsuario](src/assets/img/registroUsuario.png)
 
 ## Mockup
-![MockUp](https://www.figma.com/proto/hY4sZBYpyMx0Vtl3FuN8WJ/Stars-verse--project?node-id=0-1&t=TaHRrRAv3oqUz6K5-1)
+https://www.figma.com/proto/hY4sZBYpyMx0Vtl3FuN8WJ/Stars-verse--project?node-id=0-1&t=TaHRrRAv3oqUz6K5-1
 
 ## Requisitos 💻
 - node.js >= 20.19.4
@@ -25,16 +25,17 @@ Sistema de e-commerce con autenticación de usuarios, validación de formularios
 - Navegador web 
 
 ## Instalación 🧩
+1. Clone el repositorio:
 ```bash
-1. Clone el repositorio
+git clone https://github.com/socartagena02/Starsverse.git
 cd Starsverse
 ```
-```bash
 2. Instala las dependencias:
+```bash
 npm install
 ```
-```bash
 3. Iniciar servidor
+```bash
 ng serve
 ```
 ## Tecnologias utilizadas 👩‍💻
