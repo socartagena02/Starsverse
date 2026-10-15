@@ -1,4 +1,4 @@
-# Stars verse 🛒
+# Starsverse 🛒
 Sistema de e-commerce con autenticación de usuarios, validación de formularios y diseño responsive.
 
 ## Caracteristicas principales
