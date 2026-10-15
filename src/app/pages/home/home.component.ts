@@ -17,4 +17,7 @@ export class HomeComponent {
   searchProducts(){
     this.router.navigate(['/product']);
   }
+  goToSignUp(){
+    this.router.navigate(['/register']);
+  }
 }

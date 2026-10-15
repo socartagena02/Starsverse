@@ -1,5 +1,12 @@
+.navbar-brand{
+  font-weight: 600;
+  color: var(--primary);
+  font-family: "Bitcount Ink", system-ui;
+  text-align: center;
+}
+
 .nav-link {
-  font-weight: bold; 
+  font-weight: 500; 
 }
 
 .search-wrapper {
@@ -33,34 +40,36 @@
   max-width: 300px;
   height: 40px;
   border-radius: 20px;
-  border: 1px solid #ced4da;
+  border: 1px solid #BD2885;
   padding: 0 20px;
   text-align: center;
   order: 2; 
 }
 
 .form-control:hover {
-  border-color: #21a080;
+  border-color: #323232;
   box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.25);
 }
 
-.btn {
-  background-color: #54ABA9; 
-  border-radius: 8px;
+.btn-primary {
+  background-color: var(--button); 
+  border-radius: 10px;
   border: none;
+  margin-right: 14px;
 }
 
 .btn-primary:hover {
-  background-color: #358B89;
+  background-color: #FF6EC9;
+  color: #3B0924;
 }
 
 .container-flex {
-  background: linear-gradient(90deg, #0F8588 3%,  #00466E 59%,  #3B3F96 100%);
+  background: linear-gradient(200deg, #BD2885 50%, #FF6EC9 100%);
   max-width: 1550px;
   margin: 0 auto;
-  height: 350px;
+  height: 450px;
   position: relative;
-
+  margin-top: 4px;
 }
 
 .img-responsive {
