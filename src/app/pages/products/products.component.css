@@ -1,55 +1,26 @@
-.navbar {
-  padding: 10px 20px !important;
+body {
+  background: var(--background-color);
 }
 
-.search-wrapper {
-  padding: 10px 0;
-  border-radius: 10px; 
-}
-
-.search-container {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  gap: 20px; 
-}
-
-.input-group-pill {
-  display: flex;
-  align-items: center;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  padding: 8px 15px;
-  width: 350px;
-}
-
-.input-group-pill input {
-  border: none;
-  outline: none;
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
   width: 100%;
-  font-size: 14px;
+  box-sizing: border-box;
+  padding: 24px;
 }
 
-.nav-link-dark {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 14px;
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-.btn-iniciar {
-  background-color: #54ABA9; 
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 6px 12px;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.icon-btn {
-  cursor: pointer;
-  font-size: 18px;
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
 }

@@ -1,0 +1,38 @@
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/home">Starsverse</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCatalogContent"
+      aria-controls="navbarCatalogContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCatalogContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/product">Catálogos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/support">Soporte</a>
+        </li>
+      </ul>
+
+      <div class="d-flex gap-2">
+        <button type="button" class="btn btn-accent" (click)="goToSignUp()"> 
+          Sign up
+        </button>
+
+        <button type="button" class="btn btn-primary btn-sm" (click)="goToLogin()">
+          Log in
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

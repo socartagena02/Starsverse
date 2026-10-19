@@ -1,0 +1,8 @@
+<article class="product-card">
+    <img class="product-img" [src]="product.image[0]" [alt]="product.name">
+    <h3>{{ product.name }}</h3>
+    <div class="product-footer">
+        <p>{{ product.price | currency:'CLP':'symbol-narrow':'1.0-0' }}</p>
+        <a href="#" class="ver-producto">Ver producto</a>
+    </div>
+</article>

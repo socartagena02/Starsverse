@@ -4,7 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { ShoppingCartComponent } from './pages/shopping_cart/shopping-cart.component';
-import { ProductsComponent } from './pages/products/products.component';
+import { ProductsPageComponent } from './pages/products/products.component';
 import { SupportComponent } from './pages/support/support.component';
 import { ChangePasswordComponent } from './pages/change-password/change-password.component';
 
@@ -36,7 +36,7 @@ export const routes: Routes = [
   },
   {
     path: 'product',
-    component: ProductsComponent
+    component: ProductsPageComponent
   },
   {
     path: 'support',

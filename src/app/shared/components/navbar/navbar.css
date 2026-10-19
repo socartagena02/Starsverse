@@ -1,0 +1,51 @@
+.navbar {
+  background-color: #242027;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.navbar-brand{
+  font-weight: 600;
+  color: var(--primary);
+  font-family: "Archivo", sans-serif;
+  text-align: center;
+}
+
+.nav-link {
+  font-weight: 500; 
+  color: #ffffff;
+}
+
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+.navbar-toggler {
+  border-color: #ffffff;
+}
+
+.navbar-toggler:hover {
+  box-shadow: 0 0 0 0.2rem rgba(232, 168, 193, 0.35);
+}
+
+.btn {
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: var(--button); 
+  border-radius: 10px;
+  border: none;
+  margin-right: 14px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #FF6EC9;
+  color: #3B0924;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
