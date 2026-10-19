@@ -7,7 +7,7 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "src/app/data/products.ts", "src/app/models/products-models.ts"  ],
   "exclude": [
     "src/**/*.spec.ts"
   ]
